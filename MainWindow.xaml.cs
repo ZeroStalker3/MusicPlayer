@@ -20,6 +20,7 @@ namespace MusicPlayer
     /// </summary>
     public partial class MainWindow : Window
     {
+        bool size = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -30,6 +31,30 @@ namespace MusicPlayer
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
+            }
+        }
+
+        private void ExitBt_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Svert_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Voves_Click(object sender, RoutedEventArgs e)
+        {
+            if (size == false)
+            {
+                this.WindowState = WindowState.Maximized;
+                size = true;
+            }
+            else
+            {
+                this.WindowState = WindowState.Normal;
+                size = false;
             }
         }
     }

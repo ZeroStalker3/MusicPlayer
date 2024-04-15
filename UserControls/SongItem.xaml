@@ -29,7 +29,7 @@
 
         <TextBlock
             Text="{Binding ElementName=songitem, Path=Number}"
-            Foreground="#c2e8dc"
+            Foreground="#FF97E6C1"
             FontSize="16"
             FontWeight="SemiBold"
             Margin="5 0 30 0"/>
@@ -37,7 +37,7 @@
         <TextBlock
             Text="{Binding ElementName=songitem, Path=Title}"
             Grid.Column="1"
-            Foreground="White"
+            Foreground="#FF97E6C1"
             FontSize="16"
             FontWeight="SemiBold"
             Margin="0 0 0 2"/>
@@ -45,7 +45,7 @@
         <TextBlock
             Text="{Binding ElementName=songitem, Path=Time}"
             Grid.Column="2"
-            Foreground="#c2e8dc"
+            Foreground="#FF97E6C1"
             FontSize="16"
             FontWeight="SemiBold"
             Margin="0 0 5 2"/>
